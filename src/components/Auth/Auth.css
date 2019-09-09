@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .auth-container{
     height: 100%;
     width: 100%;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10,22 +14,25 @@
 }
 
 .input-card{
-    height: 430px;
-    width: 470px;
-    -webkit-box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.20), 0 10px 10px 0 rgba(0, 0, 0, 0.21);
-    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.20), 0 10px 10px 0 rgba(0, 0, 0, 0.21);
+    height: 425px;
+    width: 560px;
+    -webkit-box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.26), 0 10px 10px 0 rgba(0, 0, 0, 0.27);
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.26), 0 10px 10px 0 rgba(0, 0, 0, 0.27);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    background: rgb(239,112,160);
+    background: linear-gradient(90deg, #F18983 0%, #F3A16D 50%, #F1D26E 100%);
 }
 
 .input-card > h1{
     font-size: 70px;
     margin-bottom: 50px;
     letter-spacing: 3px;
+    font-weight: 700;
 }
 
 .inputs{
@@ -39,7 +46,26 @@
 }
 
 .btn{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.btn > button{
+    height: 40px;
+    width: 70px;
     border: none;
-    
+    outline: none;
+    border-radius: 1px;
+    background-image: -webkit-radial-gradient(50%, -46%, circle, #737373, #403d39);
+    background-image: -o-radial-gradient(50% -46%, circle, #737373, #403d39);
+    background-image: radial-gradient(circle at 50% -46%, #737373, #403d39);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
 }
 

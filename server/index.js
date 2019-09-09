@@ -21,7 +21,7 @@ app.use(session({
     saveUninitialized: true,
     secret: SESSION_SECRET,
     cookie: {
-        maxAge: 60000
+        maxAge: 6000000
     }
 }))
 
@@ -38,6 +38,10 @@ massive(CONNECTION_STRING)
 //Auth Endpoints
 app.post('/auth', ctrl.register)
 app.post('/auth/login', ctrl.login)
+app.get('/api/posts/:userid', ctrl.getPostsByTitle)
+app.get('/api/posts', ctrl.getPosts)
+app.get('api/post/:postid', ctrl.getPost)
+app.post('/api/post/:userid', ctrl.createPost)
 
 
 
